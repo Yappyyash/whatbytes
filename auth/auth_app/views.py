@@ -78,7 +78,7 @@ def change_password_view(request):
         form = PasswordChangeForm(request.user, request.POST)
         if form.is_valid():
             user = form.save()
-            update_session_auth_hash(request, user)  # Important to keep the user logged in after changing the password
+            update_session_auth_hash(request, user)
             messages.success(request, 'Your password was successfully updated!')
             return redirect('dashboard')
         else:
