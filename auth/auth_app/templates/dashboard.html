@@ -1,0 +1,42 @@
+{% extends 'layouts/app.html' %}
+
+{% block content %}
+<div style="text-align: center;">
+    <h1>Heyy {{ request.user.username }} !!</h1>
+</div>
+<div class="container fs-6">
+    <h2>WhatBytes Assigment</h2><a href=""><strong>Github Repo Link</strong></a>
+    <div class="card-columns" style="font-size: 2rem;">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Functionality</p>
+          <ul>
+            <li>User Registration</li>
+            <li>User Login</li>
+            <li>User Dashboard</li>
+            <li>User Profile</li>
+            <li>Change Password</li>
+            <li>Forgot Password</li>
+            <li>Logout</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Technologies Used</p>
+          <ul>
+            <li>Django</li>
+            <li>HTML/CSS</li>
+            <li>Django Forms</li>
+            <li>Django Message Framework</li>
+            <li>Django Templated</li>
+            <li>SMTP</li>
+            <li>Django Middleware</li>
+            <li>URL Routing</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+
+{% endblock %}
